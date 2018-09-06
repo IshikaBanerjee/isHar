@@ -42,20 +42,17 @@
 <body>
 
 <h2>navigation</h2>
-<div data-sly-use.navTop="com.ishar.ecomm.core.models.NavigationHelperModel"/>
-<sly data-sly-list.navPages="${navTop.pages}">
-<li>
+<div data-sly-use.navv="com.ishar.ecomm.core.models.NavigationHelperModel" data-sly-unwrap/>
+<sly data-sly-test="${navv}" data-sly-list.navPages="${navv.pages}">
 <div class="dropdown" style="float:left;">
-  <button class="dropbtn">${navPages}
+  <button class="dropbtn">${navPages.title}
    <div class="dropdown-content" style="left:0;">
-    <li data-sly-list.drops="${navPages}" data-sly-unwrap>
-    <a href="${drops.path}.html">${drops}</a>
+    <li data-sly-list.drops="${navPages.listChildren}" data-sly-unwrap>
+    <a href="${drops.path}.html">${drops.title}</a>
 	</li>
   </div>
   </button>
 </div>
-</li>
 </sly>
-
 </body>
 </html>

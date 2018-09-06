@@ -33,6 +33,45 @@
                 <groupId>org.apache.sling</groupId>
                 <artifactId>maven-sling-plugin</artifactId>
             </plugin>
+
+            <!--added for IsHar-->
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-scr-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>generate-scr-descriptor</id>
+                        <goals>
+                            <goal>scr</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Import-Package>
+                            javax.xml.namespace;version="0.0.0.fragment_xml",
+                            *
+                        </Import-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <excludePackageNames>
+                        *.impl
+                    </excludePackageNames>
+                </configuration>
+            </plugin>
+            <!--added for IsHar-->
+
+
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
@@ -56,6 +95,7 @@
                     </instructions>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 
@@ -158,6 +198,24 @@
             <artifactId>cq-wcm-api</artifactId>
             <version>5.6.2</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+
+            <artifactId>org.osgi.core</artifactId>
+
+            <version>1.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>maven-bundle-plugin</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.scr.annotations -->
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.scr.annotations</artifactId>
+            <version>1.12.0</version>
         </dependency>
 
     </dependencies>
