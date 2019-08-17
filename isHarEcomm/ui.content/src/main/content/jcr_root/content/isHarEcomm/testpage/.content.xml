@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:designPath="/etc/designs/isHarEcomm/clientlib-site"
+        cq:lastModified="{Date}2019-08-10T19:43:25.193+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/isHarEcomm/templates/page-home"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="TestPage"
+        sling:resourceType="isHarEcomm/components/structure/page">
+        <logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="isHarEcomm/components/structure/logo"/>
+        <title
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="isHarEcomm/components/content/title"/>
+        <topnav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="isHarEcomm/components/structure/topnav"/>
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <text
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="isHarEcomm/components/content/text"
+                text="&lt;p>This is a home page&lt;/p>"
+                textIsRich="true"/>
+        </par>
+        <parsys
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <navigation_163094290
+                jcr:created="{Date}2019-08-10T17:03:02.920+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2019-08-10T17:07:10.292+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="isHarEcomm/components/content/navigation"
+                navbuttons="[/content/isHarEcomm/en/men,/content/isHarEcomm/en/women,/content/isHarEcomm/en/kids]"/>
+            <carousel
+                jcr:created="{Date}2019-08-10T19:43:25.187+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2019-08-10T19:43:25.187+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/carousel"/>
+        </parsys>
+    </jcr:content>
+    <test1/>
+</jcr:root>

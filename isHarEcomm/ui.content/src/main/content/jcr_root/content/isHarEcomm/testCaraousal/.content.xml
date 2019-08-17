@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2019-08-10T19:56:13.639+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/isHarEcomm/templates/base-page-template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="testCaraousal"
+        jcr:uuid="bcc03f54-cbf7-4a66-abc7-7567e8dd40ca"
+        sling:resourceType="/apps/isHarEcomm/components/structure/basepage">
+        <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <caraousal
+                jcr:created="{Date}2018-08-12T22:35:06.885+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-08-12T22:35:06.885+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="isHarEcomm/components/content/caraousal"/>
+            <caraousal_2095672539
+                jcr:created="{Date}2018-08-12T22:35:21.103+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-08-12T22:37:51.512+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="isHarEcomm/components/content/caraousal"
+                images="[/content/dam/we-retail/en/products/Product_catalog.jpg,/content/dam/we-retail/en/activities/biking/cycling_1.jpg]"/>
+            <helloworld
+                jcr:created="{Date}2018-08-12T22:35:34.322+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-08-12T22:35:34.322+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="isHarEcomm/components/content/helloworld"/>
+        </content>
+    </jcr:content>
+</jcr:root>

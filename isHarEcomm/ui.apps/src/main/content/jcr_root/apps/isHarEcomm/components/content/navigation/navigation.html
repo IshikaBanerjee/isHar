@@ -41,9 +41,10 @@
 </head>
 <body>
 
-<h2>navigation</h2>
+<div data-sly-test="${wcmmode.edit}">navigation component</div>
 <div data-sly-use.navv="com.ishar.ecomm.core.models.NavigationHelperModel" data-sly-unwrap/>
 <sly data-sly-test="${navv}" data-sly-list.navPages="${navv.pages}">
+<div style="margin-left:100px;margin-top:10px;">
 <div class="dropdown" style="float:left;">
   <button class="dropbtn">${navPages.title}
    <div class="dropdown-content" style="left:0;">
@@ -52,6 +53,7 @@
 	</li>
   </div>
   </button>
+</div>
 </div>
 </sly>
 </body>

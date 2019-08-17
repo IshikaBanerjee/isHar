@@ -18,7 +18,7 @@
                         xtype="multifield">
                         <fieldConfig
                             jcr:primaryType="cq:Widget"
-                            rootPath="/content/isHarEcomm"
+                            rootPath="/content"
                             xtype="pathfield"/>
                     </navlist>
                 </items>
